@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="container">
+    <ul class="tab_bar">
+      <li class="tab_menu active" data-px="0">시계</li>
+      <li class="tab_menu"data-px="-500px">스탑워치</li>
+    </ul>
+    <div class="content">
+        <div class="content_wrapper">
+            <div class="watch">
+                <span class="hour">00</span>
+                <span class="min">00</span>
+                <span class="sec">00</span>
+              </div>
+              <div class="timer">
+                <div class="time">
+                    <span class="hour">00</span>
+                    <span class="min">00</span>
+                    <span class="sec">00</span>
+                </div>
+                <div class="menu">
+                    <button class="menu_btn">시작</button>
+                    <button class="menu_btn">일시정지</button>
+                    <button class="menu_btn">정지</button>
+                </div>
+              </div>
+        </div>
+    </div>
+  </div>
+  <!-- 10.114.52.199:9090 -->
+  <script src="common.js"></script>
+  <script src="./stopWatch.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

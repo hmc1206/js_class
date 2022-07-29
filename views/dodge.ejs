@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>닷지게임</title>
+  <script src="./dodgeApp.js" type="module"></script>
+  <link rel="stylesheet" href="dodgeApp.css">
+</head>
+<body>
+  <div class="container">
+    <canvas id="gameCanvas" width="600" height="700"></canvas>
+  </div>
+  <div id="popup">
+    <div class="inner" id="scorePopup">
+      <h2>사망했습니다</h2>
+      <p>총알이 영 좋지 않은 곳에 맞았군요</p>
+      <div class="record">23.33</div>
+      <div class="input-box">
+        <input type="text" id="name" placeholder="이름입력">
+        <button id="btnSend">전송</button>
+        <button id="btnClose">닫기</button>
+      </div>
+    </div>
+    <div class="inner" id="rankPopup">
+        <h2>Rank Board</h2>
+        <div class="content">
+        </div>
+        <button id="btnCloseRank">닫기</button>
+    </div>
+  </div>
+  <button><a href="/">back</a></button>
+</body>
+</html>

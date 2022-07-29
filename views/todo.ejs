@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href=
+            "fontawesome-free-6.1.1-web/css/all.css">
+  <link rel="stylesheet" href="todoApp.css">
+  <script src="todoApp.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <h1><i class="fa-solid fa-clipboard-check"></i> Todo List</h1>
+  </header>
+  <section id="main">
+    <div id="list">
+      <div class="item">
+        <h4 class="title">This is what todo!</h4>
+        <span class="msg">lorem lipsum dollor simet</span>
+      </div>
+    </div>
+    <div id="menu">
+      <div id="addForm">
+        <div class="form-group">
+          <label for="title">제목</label>
+          <input type="text" id="title" placeholder="제목 입력">
+        </div>
+        <div class="form-group">
+          <label for="date">날짜</label>
+          <input type="date" id="date">
+        </div>
+        <textarea id="content" rows="4" placeholder="내용입력"></textarea>
+        <button id="addBtn"><i class="fa-solid fa-circle-plus"></i></button>
+      </div>
+
+      <div id="garbage">
+        <i class="fa-solid fa-trash-can"></i>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <h4>Todo list by gondr. CC BY NC SA 4.0</h4>
+  </footer>
+
+  <div class="msg-box">
+    토스트 메시지입니다.
+  </div>
+  <button><a href="/">back</a></button>
+</body>
+</html>

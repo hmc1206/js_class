@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    let data = JSON.parse(`<%- JSON.stringify(toonList) %>`);
+  </script>
+  <script src="/toonApp.js"></script>
+  <link rel="stylesheet" href="/toonApp.css">
+  <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.css">
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <input type="text" id="word">
+      <button id="btnSearch">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>  <!-- end of menu -->
+    <div class="content">
+      <div class="list-box">
+        <% for(let i = 0; i < toonList.length; i++) { %>
+          <div class="item">
+            <%= toonList[i].title %>
+          </div>
+        <% } %>
+      </div>  
+      <div class="search-box">
+        <div class="item">
+          <div class="title">대충 웹툰 제목</div>
+          <span>[123456]</span>
+          <button data-id="123456">
+            <i class="fa-solid fa-circle-info"></i> 정보
+          </button>
+        </div>
+      </div>
+      <div class="result-box">
+          <div class="top">
+              <div class="img-box">
+                  <img src="" alt="">
+              </div>
+              <div class="text-box">
+                  <div class="artist">대충작가</div>
+                  <div class="text">대충 텍스트</div>
+              </div>
+          </div>
+          <div class="middle">
+              <a href="#">최신회차</a>
+          </div>
+      </div>
+    </div> <!-- end of content-->
+  </div><!-- end of container -->
+  <button><a href="/">back</a></button>
+</body>
+</html>
